@@ -1,4 +1,4 @@
-# ⏰ VibeTimer - 타이머 & 스톱워치 웹 애플리케이션
+# ⏰ Timer-Watch - 타이머 & 스톱워치 웹 애플리케이션
 
 집중하고 성장하는 시간을 만들어주는 세련된 타이머 & 스톱워치 웹 애플리케이션입니다.
 
@@ -42,7 +42,7 @@
 1. **저장소 클론**
    ```bash
    git clone <repository-url>
-   cd timer-watch-app
+   cd timer-watch
    ```
 
 2. **의존성 설치**
@@ -171,4 +171,4 @@ const presets = [
 
 ---
 
-**VibeTimer**로 더욱 생산적이고 집중된 시간을 만들어보세요! ⏰✨
+**Timer-Watch**로 더욱 생산적이고 집중된 시간을 만들어보세요! ⏰✨

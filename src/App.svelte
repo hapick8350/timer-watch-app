@@ -31,7 +31,7 @@
 <main>
   <div class="app-container">
     <header>
-      <h1>⏰ VibeTimer</h1>
+      <h1>⏰ Timer-Watch</h1>
       <p>집중하고 성장하는 시간을 만들어보세요</p>
     </header>
 
