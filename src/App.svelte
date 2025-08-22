@@ -77,9 +77,11 @@
 
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
     min-height: 100vh;
     color: #333;
+    margin: 0;
+    padding: 0;
   }
 
   .app-container {
@@ -164,6 +166,31 @@
     .tab-button {
       width: 100%;
       max-width: 300px;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 0 0.5rem;
+    }
+  }
+  
+  /* 모바일에서 확대 방지 */
+  @media (max-width: 480px) {
+    .app-container {
+      padding: 0.5rem;
+    }
+    
+    header h1 {
+      font-size: 1.8rem;
+    }
+    
+    header p {
+      font-size: 1rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0;
     }
   }
 </style>
