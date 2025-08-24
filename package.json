@@ -1,7 +1,16 @@
 {
   "name": "timer-watch",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "집중하고 성장하는 시간을 만들어주는 세련된 타이머 & 스톱워치 웹 애플리케이션",
+  "keywords": ["timer", "stopwatch", "pomodoro", "productivity", "time-management", "web-app", "svelte"],
+  "author": "Timer-Watch Team",
+  "license": "MIT",
+  "homepage": "https://timer-watch-app.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/timer-watch-app.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

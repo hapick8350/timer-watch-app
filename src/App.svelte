@@ -28,43 +28,55 @@
   }
 </script>
 
-<main>
+<main role="main" aria-label="타이머 워치 애플리케이션">
   <div class="app-container">
-    <header>
+    <header role="banner">
       <h1>⏰ Timer-Watch</h1>
       <p>집중하고 성장하는 시간을 만들어보세요</p>
     </header>
 
-    <nav class="tab-navigation">
+    <nav class="tab-navigation" role="navigation" aria-label="주요 기능 탭">
       <button 
         class="tab-button {activeTab === 'timer' ? 'active' : ''}" 
         on:click={() => activeTab = 'timer'}
+        aria-pressed={activeTab === 'timer'}
+        aria-label="타이머 기능"
       >
         🕐 타이머
       </button>
       <button 
         class="tab-button {activeTab === 'stopwatch' ? 'active' : ''}" 
         on:click={() => activeTab = 'stopwatch'}
+        aria-pressed={activeTab === 'stopwatch'}
+        aria-label="스톱워치 기능"
       >
         ⏱️ 스톱워치
       </button>
       <button 
         class="tab-button {activeTab === 'presets' ? 'active' : ''}" 
         on:click={() => activeTab = 'presets'}
+        aria-pressed={activeTab === 'presets'}
+        aria-label="프리셋 타이머 관리"
       >
         ⭐ 프리셋
       </button>
     </nav>
 
-    <div class="content">
+    <main class="content" role="region" aria-label="기능 콘텐츠">
       {#if activeTab === 'timer'}
-        <Timer on:saveTimer={saveTimer} />
+        <section aria-label="타이머 섹션">
+          <Timer on:saveTimer={saveTimer} />
+        </section>
       {:else if activeTab === 'stopwatch'}
-        <Stopwatch />
+        <section aria-label="스톱워치 섹션">
+          <Stopwatch />
+        </section>
       {:else if activeTab === 'presets'}
-        <PresetTimers {savedTimers} on:deleteTimer={deleteTimer} />
+        <section aria-label="프리셋 타이머 섹션">
+          <PresetTimers {savedTimers} on:deleteTimer={deleteTimer} />
+        </section>
       {/if}
-    </div>
+    </main>
   </div>
 </main>
 
